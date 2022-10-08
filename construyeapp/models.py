@@ -54,4 +54,5 @@ class Carrito(models.Model):
      fechaEntrega = models.DateField(editable=True)
      direccionEntrega = models.CharField(max_length=100, validators=[validar_texto,])
      precioTotal =  models.DecimalField(decimal_places=2, max_digits=10, validators=[validar_positivo,])
-
+     def __str__(self):
+        return "Carrito - %s" % self.producto.nombre
