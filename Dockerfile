@@ -1,4 +1,4 @@
-#Docker File
+#Docker File -django
 FROM python:3.8
 ENV PYTHONUNBUFFERED 1
 ENV http_proxy=http://10.1.2.20:8080
